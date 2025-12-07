@@ -1,3 +1,4 @@
+//test
 import React, { useState } from "react";
 import {
   Button,
@@ -26,16 +27,16 @@ const LoginForm = () => {
   const [userName, setUserName] = React.useState("");
   const [password, setPassword] = React.useState("");
   const [loadingStatus, setLoadingStatus] = useState(false);
-  const [error, setError] = useState("")
+  const [error, setError] = useState("");
   const dispatch = useDispatch();
 
   const setOnChangeUserName = (e) => {
     setUserName(e.target.value);
-    setError("")
+    setError("");
   };
   const setOnChangePass = (e) => {
     setPassword(e.target.value);
-    setError("")
+    setError("");
   };
 
   const handleSubmitForm = () => {
@@ -58,13 +59,15 @@ const LoginForm = () => {
         }
       } catch (error) {
         console.log("Failed to login ", error);
-        if(error?.response?.data?.message === "Password is not valid" || error?.response?.data?.message === "Tài khoản hoặc mật khẩu sai.") {
-          setError("Tên tài khoản hoặc mật khẩu không chính xác.")
-
-        }  else {
-          setError(error?.response?.data?.message)
+        if (
+          error?.response?.data?.message === "Password is not valid" ||
+          error?.response?.data?.message === "Tài khoản hoặc mật khẩu sai."
+        ) {
+          setError("Tên tài khoản hoặc mật khẩu không chính xác.");
+        } else {
+          setError(error?.response?.data?.message);
         }
-        setLoadingStatus(false)
+        setLoadingStatus(false);
       }
     };
     loginUser(userName, password);
@@ -96,10 +99,9 @@ const LoginForm = () => {
                 fontWeight: "500",
                 textAlign: "center",
                 color: "#9f9f9f",
-               
               }}
             >
-            SPECIAL ACCESS REQUIRED
+              SPECIAL ACCESS REQUIRED
             </p>
           </div>
           <form
@@ -110,27 +112,39 @@ const LoginForm = () => {
               padding: "2rem 2rem",
             }}
           >
-            {
-              error ? 
-              <span style={{color:"red", fontSize:"14px", lineHeight:"23px", textTransform:"capitalize"}}>{error}</span>
-              : null
-            }
+            {error ? (
+              <span
+                style={{
+                  color: "red",
+                  fontSize: "14px",
+                  lineHeight: "23px",
+                  textTransform: "capitalize",
+                }}
+              >
+                {error}
+              </span>
+            ) : null}
             <Input
               size="large"
               placeholder="Nhập tên tài khoản"
               onChange={(e) => setOnChangeUserName(e)}
               prefix={<UserOutlined />}
-              style={{fontSize:"14px", padding:"10px", marginTop:"10px"}}
+              style={{ fontSize: "14px", padding: "10px", marginTop: "10px" }}
             />
-           
+
             <Input.Password
               size="large"
               placeholder="Nhập mật khẩu"
               onChange={(e) => setOnChangePass(e)}
               prefix={<LockOutlined />}
-              style={{ marginTop: "1.5rem", marginBottom: "1.5rem", fontSize:"14px", padding:"10px" }}
+              style={{
+                marginTop: "1.5rem",
+                marginBottom: "1.5rem",
+                fontSize: "14px",
+                padding: "10px",
+              }}
             />
-             {/* <ReCAPTCHA
+            {/* <ReCAPTCHA
               sitekey="6LcsidglAAAAAFYnGRLQDCGqx8ZgKEf_b1GPOsjM"
               onChange={onChange}
               size="normal"
@@ -140,7 +154,15 @@ const LoginForm = () => {
               <Button
                 onClick={() => handleSubmitForm()}
                 type="primary"
-                style={{ width: "100%",color:"white", marginTop:"1rem", borderColor:"#058dd9",backgroundColor:"#058dd9", height: "40px", marginBottom: "1rem" }}
+                style={{
+                  width: "100%",
+                  color: "white",
+                  marginTop: "1rem",
+                  borderColor: "#058dd9",
+                  backgroundColor: "#058dd9",
+                  height: "40px",
+                  marginBottom: "1rem",
+                }}
                 loading={loadingStatus}
               >
                 Đăng Nhập
@@ -150,12 +172,23 @@ const LoginForm = () => {
                 onClick={() => handleSubmitForm()}
                 disabled
                 type="primary"
-                style={{ width: "100%", color:"white", marginTop:"1rem", borderColor:"#058dd9", backgroundColor:"#058dd9", height: "40px", marginBottom: "1rem" }}
+                style={{
+                  width: "100%",
+                  color: "white",
+                  marginTop: "1rem",
+                  borderColor: "#058dd9",
+                  backgroundColor: "#058dd9",
+                  height: "40px",
+                  marginBottom: "1rem",
+                }}
               >
                 Đăng Nhập
               </Button>
             )}
-            <p className="forgetPassword" onClick={() => navigate("/forgot-password")}>
+            <p
+              className="forgetPassword"
+              onClick={() => navigate("/forgot-password")}
+            >
               Quên mật khẩu?
             </p>
           </form>
@@ -173,7 +206,7 @@ const LoginForm = () => {
         draggable
         pauseOnHover
         theme="colored"
-        />
+      />
     </Row>
   );
 };
