@@ -1,0 +1,28 @@
+@font-face {
+    font-family: "Telidon";
+    src: local("Telidon Hv Italic"),
+    url("./Telidon Hv Italic.ttf") format("truetype");
+    font-weight: bold;
+}
+
+.print {
+    font-family: "Telidon";
+    font-size: 20px;
+    color: #000;
+    text-align: center;
+    margin-top: 2px;
+}
+.print-content {
+    font-family: "Telidon";
+    font-size: 7px;
+    color: #111010;
+    text-align: center;
+    margin-Left: 10px;
+    margin-right: 10px;
+    margin-top: 3px;
+}
+.content-body {
+    color: #000;
+    font-size: 7px;
+    font-weight: bold;
+}

@@ -1,0 +1,37 @@
+.card_title{
+   
+    font-size: 18px;
+    color: rgba(0,0,0,0.6);
+    font-size: 500;
+}
+
+.card_content{
+    display: flex;
+    
+    align-items: center;
+    margin: 0.2rem 0 0.6rem 0;
+}
+
+.card_content-div{
+    background-color: var(--SKB60);
+    padding: 4px 8px;
+    border-radius: 6px;
+    color: white;
+    font-size: 12px;
+}
+
+.card_content_text{
+    font-size: 20px;
+    font-weight: bold;
+    color: rgba(0,0,0,0.8);
+    margin-right: 1rem;
+}
+
+.card_extra{
+    font-size: 12px;
+    color: rgba(0,0,0,0.6);
+}
+
+// .dashboard{
+//     overflow: scroll;
+// }

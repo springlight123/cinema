@@ -1,0 +1,33 @@
+.login{
+    background-color: #12263f;
+     
+    .ant-input-affix-wrapper-lg{
+        border: 0px !important;   
+    }
+}
+
+.login_form{
+   position:relative;
+   top: 50%;
+   transform: translateY(-55%);
+}
+
+.forgetPassword{
+    font-size:14px;
+    text-align:"center";
+    color: #d8c51f;
+    display: flex;
+    justify-content: center;
+    margin: 0 !important;
+    
+        cursor: pointer;
+       
+        &:hover{
+            color: var(--shades-left-bar);
+        }
+
+}
+
+// .ant-result-title{
+//     color: white !important;
+// }

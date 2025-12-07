@@ -1,0 +1,99 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+:root {
+  --shades-left-bar: #0091ff;
+  --white: white;
+  --shades-left-bar-active: #006edc;
+  --white-600: hsla(0,0%,100%,0.25);
+  --neutral-700: #e5e7eb;
+    --neutral-600: #abb4bc;
+    --neutral-500: #72808e;
+    --neutral-400: #394e60;
+    --neutral-300: #001a33;
+    --neutral-200: #081020;
+    --neutral-100: #050a19;
+    --neutral-base: #001a33;
+    --grey-700: #fbfbfd;
+    --grey-600: #f4f5f7;
+    --grey-500: #eeeff2;
+    --grey-400: #e8eaef;
+    --grey-300: #e1e4ea;
+    --grey-base: #e1e4ea;
+    --button-color: #0190f3;
+    --E64848 : #E64848;
+    --N80: #72808e;
+    --WA0: hsla(0,0%,100%,0);
+    --WA10: hsla(0,0%,100%,0.1);
+    --WA20: hsla(0,0%,100%,0.2);
+    --WA30: hsla(0,0%,100%,0.3);
+    --WA40: hsla(0,0%,100%,0.4);
+    --WA50: hsla(0,0%,100%,0.5);
+    --WA60: hsla(0,0%,100%,0.6);
+    --WA70: hsla(0,0%,100%,0.7);
+    --WA80: hsla(0,0%,100%,0.8);
+    --WA90: hsla(0,0%,100%,0.9);
+    --B10: #e5efff;
+    --B20: #c8deff;
+    --B30: #abcdff;
+    --B40: #72abff;
+    --B50: #3989ff;
+    --B60: #0068ff;
+    --B70: #0068ff;
+    --B80: #004bb9;
+    --B90: #004bb9;
+    --B100: #004bb9;
+    --STB10: #f0f4fa;
+    --STB20: #e2eaf4;
+    --STB30: #cddaea;
+    --STB40: #b3c6db;
+    --STB50: #8da6c4;
+    --STB60: #58789d;
+    --STB70: #415a77;
+    --STB80: #31465e;
+    --STB90: #25374b;
+    --STB100: #192838;
+    --SKB10: #ecf8fe;
+    --SKB20: #d8f1fd;
+    --SKB30: #bbe8fb;
+    --SKB40: #94ddf9;
+    --SKB50: #5fcbf2;
+    --SKB60: #12aee2;
+    --SKB70: #0e83aa;
+    --SKB80: #0b6684;
+    --N10: #fbfbfd;
+    --N20: #eeeff2;
+    --N30: #e5e7eb;
+    --N40: #e1e4ea;
+    --N50: #e1e4ea;
+    --N60: #abb4bc;
+    --N70: #abb4bc;
+    --N80: #72808e;
+    --N90: #72808e;
+    --N100: #394e60;
+    --N200: #394e60;
+    --N300: #001a33;
+    --HL_photo-bg: #545454;
+}
+
+
+ul,ol{
+  list-style: none;
+  
+}
+
+a{
+  text-decoration: none;
+}
+

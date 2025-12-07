@@ -1,0 +1,49 @@
+#customers {
+    // font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  #customers th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+
+  .css-row {
+    border: 1px solid #ddd;;
+    padding: 8px;
+    td{
+      border-right: 1px solid #ddd;
+     width: 180px;
+     position: relative;
+    }
+  }
+  
+
+  
+  // #customers tr:hover {background-color: #ddd;}
+  
+  #customers th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: #1da1f2;
+    color: white;
+  }
+
+  #customers .time-row{
+    width: 80px;
+    height: 150px;
+    background-color:#ffffce;  
+    text-align: center;
+   
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: capitalize;
+    color:rgba(0,0,0,0.6);
+  }
+
+  #customers .style-table{
+    background-image: url("../../images/transparent-pattern-square-4.png");
+
+  }

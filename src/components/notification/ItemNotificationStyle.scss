@@ -1,0 +1,22 @@
+.item_notification{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    width: 100%;
+    cursor: pointer;
+   // border-bottom: 1px solid rgba(0,0,0,0.1);
+    padding-bottom: 10px;
+    .item_notification_iconBlock{
+        width: 35px;
+        height: 35px;
+        background-color: var(--N10);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+    }
+    .item_notification_content{
+        margin: 0 1rem;
+    }
+}
